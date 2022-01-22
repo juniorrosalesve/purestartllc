@@ -22,7 +22,7 @@
     <section id="services">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="basis-2/4 p-10 bg-secondary-focus">
-                <h1 class="mb-3 mt-5 lato uppercase text-2xl">Our services</h1>
+                <h1 class="mb-3 mt-1 md:mt-5 lato uppercase text-2xl">Our services</h1>
                 <p class="lato">Vacant Units
                     Before & After Party
                     Events Cleaning

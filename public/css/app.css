@@ -1847,6 +1847,9 @@ html {
   --tw-translate-y: -50%;
   margin-left: 50%;
 }
+.invisible {
+  visibility: hidden;
+}
 .fixed {
   position: fixed;
 }
@@ -3211,6 +3214,14 @@ html {
     margin-left: -100%;
   }
 
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3229,6 +3240,10 @@ html {
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:max-h-96 {

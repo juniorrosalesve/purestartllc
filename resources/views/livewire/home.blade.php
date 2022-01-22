@@ -7,10 +7,10 @@
                     <img src="https://via.placeholder.com/1600x650">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/1384x385">
+                    <img src="https://via.placeholder.com/1600x650">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/1384x385">
+                    <img src="https://via.placeholder.com/1600x650">
                 </div>
             </div>
             <div class="swiper-button-next"></div>

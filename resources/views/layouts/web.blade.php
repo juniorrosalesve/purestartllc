@@ -29,7 +29,7 @@
         <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="#" class="flex">
-                    <img src="{{ asset('img/logo2.png') }}" class="w-72 md:w-72">
+                    <img src="{{ asset('img/logo2.png') }}" class="w-64 md:w-72">
                 </a>
                 <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" id="main-menu">

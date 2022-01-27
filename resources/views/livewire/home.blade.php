@@ -63,7 +63,7 @@
     <section>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div id="map" class="w-full h-52 md:h-full"></div>
-            <div class="p-10">
+            <div class="p-10 bg-white md:bg-secondary-focus">
                 <h1 class="text-2xl text-center lato uppercase">Contact</h1>
                 <p class="text-sm text-center lato">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod dicta nostrum est culpa aut esse sunt!</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">

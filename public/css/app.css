@@ -3509,6 +3509,11 @@ html {
     background-color: transparent;
   }
 
+  .md\:bg-secondary-focus {
+    --tw-bg-opacity: 1;
+    background-color: hsla(var(--sf) / var(--tw-bg-opacity));
+  }
+
   .md\:p-0 {
     padding: 0px;
   }

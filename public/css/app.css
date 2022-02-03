@@ -2269,6 +2269,9 @@ html {
 .w-1\/4 {
   width: 25%;
 }
+.w-56 {
+  width: 14rem;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -3412,6 +3415,10 @@ html {
 
   .md\:w-1\/4 {
     width: 25%;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
   }
 
   .md\:basis-2\/6 {

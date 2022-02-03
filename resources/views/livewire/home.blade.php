@@ -13,14 +13,11 @@
                     <img src="https://via.placeholder.com/1500x450">
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
     
     <section id="services">
-        <div class="w-full text-center p-10">
+        <div class="w-full text-center p-10" data-aos="fade-right">
             <h1 class="mb-3 mt-1 md:mt-5 lato uppercase text-2xl">About Pure</h1>
             <p class="lato uppercase">PureStart is a local owner-operated commercial cleaning company that offers a range
                 of cleaning services, performing with exceptional cleaning knowledge and high-quality
@@ -51,13 +48,14 @@
             </div>
         </div> --}}
         <div class="w-full bg-white p-7">
-            <h1 class="text-center uppercase lato">BOOK NOW!! <br /> 20% Discount On Our First Visit</h1>
+            <h1 class="text-center uppercase lato italic" data-aos="zoom-in">BOOK NOW!! <br /> 20% Discount On Our First Visit</h1>
         </div>
     </section>
     <section>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="w-full py-10 px-5 bg-primary">
-                <h1 class="text-center text-white text-xl mb-1 lato uppercase">
+                <h1 class="text-center text-white text-xl mb-1 lato uppercase" data-aos="fade-left"
+                data-aos-duration="300">
                     • HAVING A CLEAN SPACE IS SIMPLE •
                 </h1>
                 {{-- <h1 class="text-center text-white text-md lato uppercase">We will make sure your business is clean,
@@ -134,34 +132,34 @@
             <div class="p-10 bg-secondary-focus">
                 <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="form-control">
+                    <div class="form-control" data-aos="fade-right">
                         <label class="label">
                             <span class="label-text lato uppercase">Full name</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="Jhon Doe">
                     </div> 
-                    <div class="form-control">
+                    <div class="form-control" data-aos="fade-right">
                         <label class="label">
                             <span class="label-text lato uppercase">Email address</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="jhon.doe@company.com">
                     </div>
-                    <div class="form-control">
+                    <div class="form-control" data-aos="fade-right">
                         <label class="label">
                             <span class="label-text lato uppercase">Phone number</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="(000) 111-1111">
                     </div>
-                    <div class="form-control">
+                    <div class="form-control" data-aos="fade-right">
                         <label class="label">
                             <span class="label-text lato uppercase">Business name</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="Company name">
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <center>
-                        <button class="btn btn-success btn-sm w-60 lato border-0 rounded-sm mt-4">Submit</button>
+                        <button class="btn btn-success btn-sm w-56 md:w-60 lato border-0 rounded-sm mt-8">Submit</button>
                     </center>
                 </div>
             </div>
@@ -209,14 +207,21 @@
                     </div>
                 </div>
                 <div class="text-center mt-5 md:mt-0">
-                    <p class="uppercase font-semibold lato">&copy; PURESTARTLLC.COM</p>
-                    <p class="lato italic">“Nice and Neat, Fresh and Clean”</p>   
+                    <p class="uppercase lato">
+                        “Nice and Neat, Fresh and Clean”
+                    </p>
+                    <p class="lato italic text-xs">
+                        Copyright &copy; PureStart LLC - Commercial Cleaning - All Rights Reserved. <br /> Do Not Sell My Personal Information.
+                    </p>   
                 </div>
             </div>
           </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS') }}&callback=initMap&v=weekly" async></script>
     <script>
+        AOS.init({
+            once:true
+        });
         function initMap() {
             const myLatlng = { lat: 8.614913, lng: -70.256498 };
 

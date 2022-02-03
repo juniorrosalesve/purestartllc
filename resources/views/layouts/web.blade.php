@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ mix('css/purestartllc.css') }}">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     @livewireStyles
 
@@ -23,6 +24,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ mix('js/purestartllc.js') }}"></script>
     <script src="{{ asset('js/simple-scrollspy.min.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header class="sticky top-0 z-50" >
@@ -62,12 +64,8 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
             autoplay: {
-                delay: 4000,
+                delay: 3000,
             }
         });
         window.onload = function () {

@@ -26,7 +26,7 @@
                 of cleaning services, performing with exceptional cleaning knowledge and high-quality
                 products to guarantee customer satisfaction and exceed expectations. Serving the
                 Denver metro area.</p>
-            <p class="lato uppercase mb-3 md:mt-3">WE WILL MAKE SURE YOUR BUSINESS IS CLEAN, READY FOR YOU AND
+            <p class="lato uppercase mb-3 mt-3">WE WILL MAKE SURE YOUR BUSINESS IS CLEAN, READY FOR YOU AND
                 YOUR EMPLOYEES TO HAVE A GOOD, FRESH, PURE START.  <br />
                 WE ARE RELIABLE, TRUSTWORTHY AND DETAIL ORIENTED.</p>
         </div>

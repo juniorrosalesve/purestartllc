@@ -16,7 +16,7 @@
         </div>
     </section>
     
-    <section id="services">
+    <section id="about">
         <div class="w-full text-center p-10" data-aos="fade-right">
             <h1 class="mb-3 mt-1 md:mt-5 lato uppercase text-2xl">About Pure</h1>
             <p class="lato uppercase">PureStart is a local owner-operated commercial cleaning company that offers a range

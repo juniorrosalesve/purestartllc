@@ -36,10 +36,10 @@
                 <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" id="main-menu">
                         <li>
-                            <a href="javscript:void(0)" class="active menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-none md:bg-transparent md:p-0" aria-current="page">Home</a>
+                            <a href="#home" class="active menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-none md:bg-transparent md:p-0" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="javscript:void(0)" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
+                            <a href="#about" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
                                 About
                             </a>
                         </li>
@@ -83,6 +83,6 @@
             })
         }
     </script>
-    @livewireScripts
+    <script src="{{ asset('vendor/livewire/livewire.js') }}"></script>
 </body>
 </html>

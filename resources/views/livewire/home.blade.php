@@ -129,28 +129,28 @@
                     </div>
                 </div>
             </div>
-            <div class="p-10 bg-secondary-focus">
+            <div class="p-10 bg-secondary-focus" data-aos="fade-right">
                 <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="form-control" data-aos="fade-right">
+                    <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Full name</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="Jhon Doe">
                     </div> 
-                    <div class="form-control" data-aos="fade-right">
+                    <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Email address</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="jhon.doe@company.com">
                     </div>
-                    <div class="form-control" data-aos="fade-right">
+                    <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Phone number</span>
                         </label> 
                         <input type="text" class="rounded-sm text-xs" placeholder="(000) 111-1111">
                     </div>
-                    <div class="form-control" data-aos="fade-right">
+                    <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Business name</span>
                         </label> 

@@ -1,13 +1,70 @@
-<div>
+<!DOCTYPE html>
+<html lang="en" data-theme="purestartllc" class="bg-secondary-focus">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PURESTART, LLC</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/simple-scrollspy.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header class="sticky top-0 z-50" >
+        <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex">
+                    <img src="./img/xlogo.png" class="w-64">
+                </a>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" id="main-menu">
+                        <li>
+                            <a href="#home" class="active menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-none md:bg-transparent md:p-0" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javscript:void(0)" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javscript:void(0)" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus md:border-0 md:hover:text-secondary md:p-0">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <!-- SliderShow -->
     <section id="home" class="scrollspy">
         <div class="swiper mySwiper md:max-h-96 shadow-lg">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="{{ asset('img/sliders/01x650.png') }}">
+                    <img src="./img/sliders/01x450.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{ asset('img/sliders/02x650.png') }}">
+                    <img src="./img/sliders/02x450.png">
                 </div>
                 <div class="swiper-slide">
                     <img src="https://via.placeholder.com/1500x450">
@@ -27,7 +84,7 @@
                 YOUR EMPLOYEES TO HAVE A GOOD, FRESH, PURE START.  <br />
                 WE ARE RELIABLE, TRUSTWORTHY AND DETAIL ORIENTED.</p>
         </div>
-        {{-- <div class="grid grid-cols-1 md:grid-cols-2">
+         <!-- <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="basis-2/4 p-10 bg-secondary-focus">
 
             </div>
@@ -46,7 +103,7 @@
                     
                     satisfaction and exceed your expectations.</p>
             </div>
-        </div> --}}
+        </div>  -->
         <div class="w-full bg-white p-7">
             <h1 class="text-center uppercase lato italic" data-aos="zoom-in">BOOK NOW!! <br /> 20% Discount On Our First Visit</h1>
         </div>
@@ -58,9 +115,9 @@
                 data-aos-duration="300">
                     • HAVING A CLEAN SPACE IS SIMPLE •
                 </h1>
-                {{-- <h1 class="text-center text-white text-md lato uppercase">We will make sure your business is clean,
+                <!-- <h1 class="text-center text-white text-md lato uppercase">We will make sure your business is clean,
                     ready for you and your employees to
-                    have a good-fresh, Pure-Start.</h1> --}}
+                    have a good-fresh, Pure-Start.</h1>  -->
                 <div class="grid justify-items-center sm:hidden">
                     <div data-aos="fade-up" class="my-2">
                         <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
@@ -185,25 +242,25 @@
                         <label class="label">
                             <span class="label-text lato uppercase">Full name</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs" placeholder="Jhon Doe">
+                        <input type="text" class="rounded-sm text-xs p-2" placeholder="Jhon Doe">
                     </div> 
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Email address</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs" placeholder="jhon.doe@company.com">
+                        <input type="text" class="rounded-sm text-xs p-2" placeholder="jhon.doe@company.com">
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Phone number</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs" placeholder="(000) 111-1111">
+                        <input type="text" class="rounded-sm text-xs p-2" placeholder="(000) 111-1111">
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Business name</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs" placeholder="Company name">
+                        <input type="text" class="rounded-sm text-xs p-2" placeholder="Company name">
                     </div>
                 </div>
                 <div data-aos="fade-up">
@@ -236,7 +293,7 @@
                     </div>
                     <div class="md:-mt-5">
                         <center>
-                            <img src="{{ asset('img/icono.png') }}" alt="icono-purestartllc" class="w-10">
+                            <img src="./img/icono.png" alt="icono-purestartllc" class="w-10">
                         </center>
                     </div>
                     <div>
@@ -264,11 +321,33 @@
                     </p>   
                 </div>
             </div>
-          </div>
+            </div>
     </footer>
+    
+
     <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 3000,
+            }
+        });
+        window.onload = function () {
+            scrollSpy('#main-menu', {
+                sectionClass: '.scrollspy',
+                menuActiveTarget: '.menu-item',
+                offset: 100,
+                scrollContainer: '.scroll-container',
+                // smooth scroll
+                smoothScroll: true,
+                smoothScrollBehavior: function(element) {
+                console.log('run "smoothScrollBehavior"...', element)
+                element.scrollIntoView({ behavior: 'smooth' })
+                }
+            })
+        }
         AOS.init({
             once:true
         });
     </script>
-</div>
+</body>
+</html>

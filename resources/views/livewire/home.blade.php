@@ -54,7 +54,7 @@
     <section>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="w-full py-10 px-5 bg-primary">
-                <h1 class="text-center text-white text-xl mb-1 lato uppercase" data-aos="fade-left"
+                <h1 class="text-center text-white text-xl mb-1 lato uppercase" data-aos="fade-right"
                 data-aos-duration="300">
                     • HAVING A CLEAN SPACE IS SIMPLE •
                 </h1>

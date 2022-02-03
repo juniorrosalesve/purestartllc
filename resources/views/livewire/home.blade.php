@@ -217,39 +217,9 @@
             </div>
           </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS') }}&callback=initMap&v=weekly" async></script>
     <script>
         AOS.init({
             once:true
         });
-        function initMap() {
-            const myLatlng = { lat: 8.614913, lng: -70.256498 };
-
-            let map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: myLatlng,
-                zoomControl:false,
-                streetViewControl:false,
-                mapTypeControl:false
-            });
-            marker = new google.maps.Marker({
-                position:myLatlng,
-                map: map,
-            });
-            const infoBody      =  '<h2 class="text-md uppercase">purestart, llc</h2><hr />'+
-                '<p class="mt-1"><b>Address:</b> </p>'+
-                '<p><b>Phone:</b></p>'
-            
-            ; 
-            const infowindow    =   new google.maps.InfoWindow({
-                content: infoBody,
-                maxWidth:500
-            });
-            infowindow.open({
-                anchor: marker,
-                map,
-                shouldFocus: false
-            });
-        }
     </script>
 </div>

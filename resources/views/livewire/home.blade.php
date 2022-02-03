@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-10 bg-white md:bg-secondary-focus">
+            <div class="p-10 bg-secondary-focus">
                 <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div class="form-control">

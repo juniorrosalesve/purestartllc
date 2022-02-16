@@ -12,6 +12,14 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .styles([
+        'resources/css/swiper-bundle.css',
+        'resources/css/styles.css',
+        'resources/css/jquery.dataTables.css',
+    ], 'public/css/purestartllc.css')
+    .scripts([
+        'resources/js/swiper-bundle.js',
+    ], 'public/js/purestartllc.js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),

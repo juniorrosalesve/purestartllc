@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', App\Http\Livewire\Site\Home::class)->name('HomeSite');
+Route::get('about-us', App\Http\Livewire\Site\About::class)->name('AboutSite');
+Route::get('services', App\Http\Livewire\Site\Services::class)->name('ServiceSite');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

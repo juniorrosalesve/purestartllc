@@ -1,6 +1,6 @@
 <div>
    <div class="p-10 md:flex md:justify-center gap-11">
-      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md" data-aos="fade-right">
+      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md">
          <div class="md:flex md:justify-between p-5">
             <div >
                <img src="{{ asset('img/servicios/oficinas-min.png') }}" alt="notas" width="160">
@@ -18,7 +18,7 @@
             </div>
          </div>
       </div>
-      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0" data-aos="fade-right">
+      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="md:flex md:justify-between p-5">
             <div >
                <img src="{{ asset('img/servicios/IMG-3065-min.png') }}" alt="notas" width="160">
@@ -34,7 +34,7 @@
             </div>
          </div>
       </div>
-      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0" data-aos="fade-right">
+      <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="md:flex md:justify-between p-5">
             <div >
                <img src="{{ asset('img/servicios/IMG-3064-min.png') }}" alt="notas" width="160">
@@ -76,7 +76,7 @@
    </div>
 
    <div class="p-10 md:flex md:justify-center gap-10">
-      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md" data-aos="fade-up">
+      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md">
          <div class="p-5">
             <div >
                <img src="{{ asset('img/servicios/IMG-3063-min.png') }}" alt="notas" width="160">
@@ -91,7 +91,7 @@
             </div>
          </div>
       </div>
-      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0" data-aos="fade-up">
+      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
                <img src="{{ asset('img/servicios/IMG-3062-min.png') }}" alt="notas" width="150">
@@ -107,7 +107,7 @@
             </div>
          </div>
       </div>
-      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0" data-aos="fade-up">
+      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
                <img src="{{ asset('img/servicios/IMG-3061-min.png') }}" alt="notas" width="150">
@@ -122,7 +122,7 @@
          </div>
       </div>
 
-      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0" data-aos="fade-up">
+      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
                <img src="{{ asset('img/servicios/notas-min.png') }}" alt="notas" width="150">

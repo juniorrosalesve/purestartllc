@@ -27,7 +27,7 @@
         <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="{{ route('HomeSite') }}" class="flex">
-                    <img src="{{ asset('img/xlogo-min.png') }}" class="w-64">
+                    <img src="{{ asset('img/xlogo-min.png') }}" style="width: 256px;" />
                 </a>
                 <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -69,40 +69,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- SliderShow -->
-    <section id="home" class="scrollspy">
-        <div class="sm:hidden">
-            <div class="swiper mySwiper shadow-lg">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/01x650-min.png') }}">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/02x650-min.png') }}">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/03x650-min.png') }}">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hidden sm:flex">
-            <div class="swiper mySwiper shadow-lg">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/01x450-min.png') }}">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/02x450-min.png') }}">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/sliders/03x450-min.png') }}">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     {{ $slot }}
 

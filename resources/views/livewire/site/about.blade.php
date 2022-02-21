@@ -1,4 +1,5 @@
 <div>
+    @include('sliders')
     <section id="about">
         <div class="w-full p-10 text-center">
             <h1 class="mb-3 mt-1 md:mt-5 lato uppercase text-2xl">About us</h1>

@@ -1,4 +1,5 @@
 <div>
+    @include('sliders')
     <section id="about">
         <div class="w-full text-center p-10" data-aos="fade-right">
             <!-- <h1 class="mb-3 mt-1 md:mt-5 lato uppercase text-2xl">About Pure</h1> -->
@@ -47,11 +48,13 @@
                 <div class="grid justify-items-center sm:hidden">
                     <div data-aos="fade-up" class="my-2">
                         <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                            <span class="text-center text-secondary-focus w-full">
+                            <img src="{{ asset('img/steps/IMG-3055-min.png') }}" alt="phone-icon"  />
+                            {{-- <span class="text-center text-secondary-focus w-full">
+                                
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-                            </span>
+                            </span> --}}
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Contact us</div>
                     </div>
@@ -59,9 +62,10 @@
                     <div data-aos="fade-up" class="my-2">
                         <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
                             <span class="text-center text-secondary-focus w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                                <img src="{{ asset('img/steps/IMG-3056-min.png') }}" alt="calendar-icon" class="w-full" />
+                                {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
+                                </svg> --}}
                             </span>
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">
@@ -71,22 +75,24 @@
                     <div class="w-2 rounded bg-gray-200 h-10" data-aos="zoom-in"></div>
                     <div data-aos="fade-up" class="my-2">
                         <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                            <span class="text-center text-secondary-focus w-full">
+                            <img src="{{ asset('img/steps/IMG-3057-min.png') }}" alt="mail-icon" class="w-full" />
+                            {{-- <span class="text-center text-secondary-focus w-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                            </span>
+                            </span> --}}
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Book</div>
                     </div>
                     <div class="w-2 rounded bg-gray-200 h-10" data-aos="zoom-in"></div>
                     <div data-aos="fade-up" class="my-2">
                         <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                            <span class="text-center text-secondary-focus w-full">
+                            <img src="{{ asset('img/steps/IMG-3058-min.png') }}" alt="enjoy-icon" class="w-full" />
+                            {{-- <span class="text-center text-secondary-focus w-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                            </span>
+                            </span> --}}
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Enjoy your clean space</div>
                     </div>
@@ -96,12 +102,13 @@
                 <div class="hidden sm:flex sm:mt-10" data-aos="fade-up">
                     <div class="w-1/4">
                         <div class="relative mb-2">
-                            <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                                <span class="text-center text-secondary-focus w-full">
+                            <div class="w-12 h-12 -mt-1 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
+                                <img src="{{ asset('img/steps/IMG-3055-min.png') }}" alt="phone-icon"  />
+                                {{-- <span class="text-center text-secondary-focus w-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
-                                </span>
+                                </span> --}}
                             </div>
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Contact us</div>
@@ -113,12 +120,13 @@
                                 <div class="w-0 py-1 rounded" style="width: 33%;"></div>
                             </div>
                             </div>
-                            <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                                <span class="text-center text-secondary-focus w-full">
+                            <div class="w-12 h-12 -mt-1 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
+                                <img src="{{ asset('img/steps/IMG-3056-min.png') }}" alt="calendar-icon" class="w-full" />
+                                {{-- <span class="text-center text-secondary-focus w-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                     </svg>
-                                </span>
+                                </span> --}}
                             </div>
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">
@@ -132,12 +140,13 @@
                                 <div class="w-0 py-1 rounded" style="width: 33%;"></div>
                             </div>
                             </div>
-                            <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                                <span class="text-center text-secondary-focus w-full">
+                            <div class="w-12 h-12 -mt-1 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
+                                <img src="{{ asset('img/steps/IMG-3057-min.png') }}" alt="mail-icon" class="w-full" />
+                                {{-- <span class="text-center text-secondary-focus w-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                </span>
+                                </span> --}}
                             </div>
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Book</div>
@@ -149,12 +158,13 @@
                                 <div class="w-0 bg-green-300 py-1 rounded" style="width: 0%;"></div>
                             </div>
                             </div>
-                            <div class="w-10 h-10 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
-                                <span class="text-center text-secondary-focus w-full">
+                            <div class="w-12 h-12 -mt-1 mx-auto bg-primary-focus rounded-full text-lg text-white flex items-center">
+                                <img src="{{ asset('img/steps/IMG-3058-min.png') }}" alt="enjoy-icon" class="w-full" />
+                                {{-- <span class="text-center text-secondary-focus w-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                </span>
+                                </span> --}}
                             </div>
                         </div>
                         <div class="lato uppercase text-white text-sm text-center">Enjoy your clean space</div>
@@ -168,25 +178,25 @@
                         <label class="label">
                             <span class="label-text lato uppercase">Full name</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs p-2">
+                        <input type="text" wire:model="name" class="rounded-sm text-xs p-2">
                     </div> 
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Email address</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs p-2">
+                        <input type="text" wire:model="email" class="rounded-sm text-xs p-2">
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Phone number</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs p-2">
+                        <input type="text" wire:model="phone" class="rounded-sm text-xs p-2">
                     </div>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text lato uppercase">Business name</span>
                         </label> 
-                        <input type="text" class="rounded-sm text-xs p-2">
+                        <input type="text" wire:model="business" class="rounded-sm text-xs p-2">
                     </div>
                 </div>
                 <div data-aos="fade-up">

@@ -21,7 +21,7 @@ class Home extends Component
             'phone' => $this->phone,
             'business' => $this->business
         ];
-        Mail::to('juniorrosales1908@gmail.com')->queue(new ContactMail($data));
+        Mail::to('purestartllc@gmail.com')->queue(new ContactMail($data));
         $this->name = '';
         $this->email = '';
         $this->phone = '';

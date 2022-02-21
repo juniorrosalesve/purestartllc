@@ -7,12 +7,12 @@
     <title>PURESTART, LLC</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" />
+    {{-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" /> --}}
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     @livewireStyles
@@ -128,8 +128,8 @@
     </footer>
     
     <script src="{{ mix('js/purestartllc.js') }}"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+    {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script> --}}
 
     <script>
         var swiper = new Swiper(".mySwiper", {

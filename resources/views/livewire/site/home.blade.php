@@ -170,40 +170,50 @@
                     </div>
                 </div>
             </div>
-            <div class="p-10 bg-secondary-focus">
-                <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text lato uppercase">Full name</span>
-                        </label> 
-                        <input type="text" wire:model="name" class="rounded-sm text-xs p-2">
-                    </div> 
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text lato uppercase">Email address</span>
-                        </label> 
-                        <input type="text" wire:model="email" class="rounded-sm text-xs p-2">
+            <form wire:submit.prevent="submit">
+                <div class="p-10 bg-secondary-focus">
+                    <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text lato uppercase">Full name</span>
+                            </label> 
+                            <input type="text" wire:model="name" class="rounded-sm text-xs p-2">
+                        </div> 
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text lato uppercase">Email address</span>
+                            </label> 
+                            <input type="text" wire:model="email" class="rounded-sm text-xs p-2">
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text lato uppercase">Phone number</span>
+                            </label> 
+                            <input type="text" wire:model="phone" class="rounded-sm text-xs p-2">
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text lato uppercase">Business name</span>
+                            </label> 
+                            <input type="text" wire:model="business" class="rounded-sm text-xs p-2">
+                        </div>
                     </div>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text lato uppercase">Phone number</span>
-                        </label> 
-                        <input type="text" wire:model="phone" class="rounded-sm text-xs p-2">
-                    </div>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text lato uppercase">Business name</span>
-                        </label> 
-                        <input type="text" wire:model="business" class="rounded-sm text-xs p-2">
+                    <div>
+                        <center>
+                            @if (session()->has('success'))
+                                <div class="alert shadow-lg alert-success alert-xs mt-8">
+                                    <div>
+                                        <span class="text-md lato">{{ session('success') }}</span>
+                                    </div>
+                                </div>
+                            @else
+                                <button class="btn btn-success btn-sm w-56 md:w-60 lato border-0 rounded-sm mt-8">Submit</button>
+                            @endif
+                        </center>
                     </div>
                 </div>
-                <div>
-                    <center>
-                        <button class="btn btn-success btn-sm w-56 md:w-60 lato border-0 rounded-sm mt-8">Submit</button>
-                    </center>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
 </div>

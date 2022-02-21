@@ -1,17 +1,17 @@
 <div>
    <h1 class="text-center uppercase lato text-2xl mt-10 font-semibold">WE CLEAN</h1>
-   <div class="p-10 md:flex md:justify-center gap-11">
+   <div class="p-10 md:p-5 md:flex md:justify-center gap-11">
       <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md">
-         <div class="md:flex md:justify-between p-5">
+         <div class="sm:flex sm:justify-center md:flex-none	md:block xl:flex p-5">
             <div>
-               <img src="{{ asset('img/servicios/oficinas-min.png') }}" alt="notas" width="160" />
+               <img src="{{ asset('img/servicios/oficinas-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato md:-mt-3">
                   <li>Corporate Offices</li>
                   <li>Leasing Offices</li>
                   <li>Medical Offices</li>
-                  <li>Classrooms/Daycars</li>
+                  <li>Classrooms/Daycares</li>
                   <li>Centers/Schools</li>
                   <li>Retail Stores</li>
                   <li>Restaurants</li>
@@ -20,9 +20,9 @@
          </div>
       </div>
       <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
-         <div class="md:flex md:justify-between p-5">
+         <div class="sm:flex sm:justify-center md:flex-none	md:block xl:flex p-5">
             <div >
-               <img src="{{ asset('img/servicios/IMG-3065-min.png') }}" alt="notas" width="160" />
+               <img src="{{ asset('img/servicios/IMG-3065-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
@@ -36,9 +36,9 @@
          </div>
       </div>
       <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
-         <div class="md:flex md:justify-between p-5">
+         <div class="sm:flex sm:justify-center md:flex-none	md:block xl:flex p-5">
             <div >
-               <img src="{{ asset('img/servicios/IMG-3064-min.png') }}" alt="notas" width="160" />
+               <img src="{{ asset('img/servicios/IMG-3064-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
@@ -77,11 +77,11 @@
    </div>
 
    <h1 class="text-center uppercase lato text-2xl mt-10 font-semibold">OUR SERVICES</h1>
-   <div class="p-10 md:flex md:justify-center gap-10">
-      <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md">
+   <div class="p-10 md:grid md:grid-cols-2 xl:grid-cols-none xl:flex xl:justify-center gap-10">
+      <div class="w-full sm:flex sm:justify-between md:flex md:block md:w-72 bg-white rounded-lg border border-gray-200 shadow-md">
          <div class="p-5">
             <div >
-               <img src="{{ asset('img/servicios/IMG-3063-min.png') }}" alt="notas" width="160" />
+               <img src="{{ asset('img/servicios/IMG-3063-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
@@ -96,7 +96,7 @@
       <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
-               <img src="{{ asset('img/servicios/IMG-3062-min.png') }}" alt="notas" width="150" />
+               <img src="{{ asset('img/servicios/IMG-3062-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
@@ -112,7 +112,7 @@
       <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
-               <img src="{{ asset('img/servicios/IMG-3061-min.png') }}" alt="notas" width="150" />
+               <img src="{{ asset('img/servicios/IMG-3061-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
@@ -127,13 +127,13 @@
       <div class="w-full md:w-72 bg-white rounded-lg border border-gray-200 shadow-md mt-5 md:mt-0">
          <div class="p-5">
             <div >
-               <img src="{{ asset('img/servicios/notas-min.png') }}" alt="notas" width="150" />
+               <img src="{{ asset('img/servicios/notas-min.png') }}" alt="notas" class="w-56 sm:w-40" />
             </div>
             <div>
                <ul class="list-disc list-outside uppercase p-5 text-sm lato">
-                  <li>VACUUMING</li>
-                  <li>MOPPING</li>
-                  <li>SWEEPING</li>
+                  <li>Special services</li>
+                  <li>Organizing (under request)</li>
+                  <li>Events Cleaning</li>
                </ul>
             </div>
          </div>

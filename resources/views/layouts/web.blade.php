@@ -128,7 +128,7 @@
     </footer>
     
     <script src="{{ mix('js/purestartllc.js') }}"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
     {{-- <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script> --}}
 
     <script>
@@ -137,23 +137,23 @@
                 delay: 3000,
             }
         });
-        window.onload = function () {
-            scrollSpy('#main-menu', {
-                sectionClass: '.scrollspy',
-                menuActiveTarget: '.menu-item',
-                offset: 100,
-                scrollContainer: '.scroll-container',
-                // smooth scroll
-                smoothScroll: true,
-                smoothScrollBehavior: function(element) {
-                console.log('run "smoothScrollBehavior"...', element)
-                element.scrollIntoView({ behavior: 'smooth' })
-                }
-            })
-        }
-        AOS.init({
-            once:true
-        });
+        // window.onload = function () {
+        //     scrollSpy('#main-menu', {
+        //         sectionClass: '.scrollspy',
+        //         menuActiveTarget: '.menu-item',
+        //         offset: 100,
+        //         scrollContainer: '.scroll-container',
+        //         // smooth scroll
+        //         smoothScroll: true,
+        //         smoothScrollBehavior: function(element) {
+        //         console.log('run "smoothScrollBehavior"...', element)
+        //         element.scrollIntoView({ behavior: 'smooth' })
+        //         }
+        //     })
+        // }
+        // AOS.init({
+        //     once:true
+        // });
     </script>
 
     @livewireScripts

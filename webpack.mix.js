@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
     .styles([
         'resources/css/swiper-bundle.css',
         'resources/css/styles.css',
-        'resources/css/jquery.dataTables.css',
+        // 'resources/css/jquery.dataTables.css',
     ], 'public/css/purestartllc.css')
     .scripts([
         'resources/js/swiper-bundle.js',

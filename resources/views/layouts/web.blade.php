@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="sticky top-0 z-50" >
-        <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
+        {{-- <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="{{ route('HomeSite') }}" class="flex">
                     <img src="{{ asset('img/xlogo-min.png') }}" style="width: 256px;" />
@@ -67,7 +67,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
     </header>
 
     {{ $slot }}

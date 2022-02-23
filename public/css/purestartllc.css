@@ -663,6 +663,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #326a58;
 }
 
 header ul {
@@ -670,7 +671,6 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f3f3f3;
 }
 
 header ul li {

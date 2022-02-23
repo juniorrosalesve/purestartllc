@@ -23,7 +23,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="bg-white">
         <ul>
             <a href="{{ route('HomeSite') }}">
                 <img src="{{ asset('img/xlogo-min.png') }}" alt="logo" style="float: left;width:280px;" />

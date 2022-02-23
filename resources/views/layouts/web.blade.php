@@ -23,51 +23,36 @@
 
 </head>
 <body>
-    <header class="sticky top-0 z-50" >
-        {{-- <nav class="bg-white border-b-2 border-primary px-2 sm:px-4 py-2.5">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="{{ route('HomeSite') }}" class="flex">
-                    <img src="{{ asset('img/xlogo-min.png') }}" style="width: 256px;" />
+    <header>
+        <ul>
+            <a href="{{ route('HomeSite') }}">
+                <img src="{{ asset('img/xlogo-min.png') }}" alt="logo" style="float: left;width:280px;" />
+            </a>
+            <li>
+                <a href="{{ route('HomeSite') }}#contact" class="lato">
+                    Contact
                 </a>
-                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" id="main-menu">
-                        <li>
-                            <a href="{{ route('HomeSite') }}" class="@if(\Request::route()->getName() == 'HomeSite') 
-                                    active
-                                @endif menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-none md:bg-transparent md:p-0" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('AboutSite') }}" class="@if(\Request::route()->getName() == 'AboutSite') 
-                                    active
-                                @endif menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('ServiceSite') }}" class="@if(\Request::route()->getName() == 'ServiceSite') 
-                                    active
-                                @endif menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus border-b border-gray-100 md:border-0 md:hover:text-secondary md:p-0">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('HomeSite') }}#contact" class="menu-item uppercase block py-2 pr-4 pl-3 text-primary-focus md:border-0 md:hover:text-secondary md:p-0">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> --}}
+            </li>
+            <li>
+                <a href="{{ route('ServiceSite') }}" class="@if(\Request::route()->getName() == 'ServiceSite') 
+                        active
+                    @endif lato">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('AboutSite') }}" class="@if(\Request::route()->getName() == 'AboutSite') 
+                        active
+                    @endif lato">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('HomeSite') }}" class="@if(\Request::route()->getName() == 'HomeSite') 
+                        active
+                    @endif lato">Home</a>
+            </li>
+        </ul>
     </header>
 
     {{ $slot }}

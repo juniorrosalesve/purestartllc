@@ -43,3 +43,39 @@ nav ul li .active {
 .lato {
     font-family: 'Lato', sans-serif;
 }
+
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+header ul li {
+    float: right;
+}
+
+header ul li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 25px 18px;
+    text-decoration: none;
+}
+
+header ul li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+header ul li a.active {
+    color: white;
+    background-color: #326a58;
+}

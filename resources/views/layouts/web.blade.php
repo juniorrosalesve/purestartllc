@@ -7,30 +7,34 @@
     <title>PURESTART, LLC</title>
 
     <!-- Fonts -->
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" /> --}}
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     @livewireStyles
 
     <link rel="stylesheet" href="{{ mix('css/purestartllc.css') }}">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <header class="bg-white">
-        <ul>
-            <a href="{{ route('HomeSite') }}">
-                <img src="{{ asset('img/xlogo-min.png') }}" alt="logo" style="float: left;width:280px;" />
-            </a>
+        <img src="{{ asset('img/xlogo-min.png') }}" onclick="location.href='{{ route('HomeSite') }}'" class="cursor-pointer" alt="logo" />
+        <div class="main-phone cursor-pointer md:hidden">
+            <span class="mdi mdi-format-align-justify" onclick="openNavbar()"></span>
+        </div>
+        <ul id="xnavbar">
             <li>
-                <a href="{{ route('HomeSite') }}#contact" class="lato">
-                    Contact
+                <a href="{{ route('HomeSite') }}" class="@if(\Request::route()->getName() == 'HomeSite') 
+                        active
+                    @endif lato">Home</a>
+            </li>
+            <li>
+                <a href="{{ route('AboutSite') }}" class="@if(\Request::route()->getName() == 'AboutSite') 
+                        active
+                    @endif lato">
+                    About
                 </a>
             </li>
             <li>
@@ -41,16 +45,9 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('AboutSite') }}" class="@if(\Request::route()->getName() == 'AboutSite') 
-                        active
-                    @endif lato">
-                    About
+                <a href="{{ route('HomeSite') }}#contact" class="lato">
+                    Contact
                 </a>
-            </li>
-            <li>
-                <a href="{{ route('HomeSite') }}" class="@if(\Request::route()->getName() == 'HomeSite') 
-                        active
-                    @endif lato">Home</a>
             </li>
         </ul>
     </header>
@@ -77,7 +74,9 @@
             <div class="md:basis-8/12 p-10">
                 <div class="md:flex md:justify-center md:gap-5">
                     <div>
-                        <p class="text-center lato font-semibold">813.607.0944</p>
+                        <a href="tel:+18136070944">
+                            <p class="text-center lato font-semibold">813.607.0944</p>
+                        </a>
                     </div>
                     <div class="md:-mt-5">
                         <center>
@@ -85,19 +84,25 @@
                         </center>
                     </div>
                     <div>
-                        <p class="text-center lato font-semibold">404.988.1420</p>
+                        <a href="tel:+14049881420">
+                            <p class="text-center lato font-semibold">404.988.1420</p>
+                        </a>
                     </div>
                 </div>
                 <div class="mt:5 md:mt-0 md:flex md:justify-center md:gap-5">
                     <div>
-                        <p class="text-center md:justify uppercase lato text-sm">info@purestartllc.com</p>
+                        <a href="mailto:info@purestartllc.com">
+                            <p class="text-center md:justify uppercase lato text-sm cursor-pointer">info@purestartllc.com</p>
+                        </a>
                     </div>
                     <div>
                         <p class="hidden md:block">|</p>
                         <p class="block text-center md:hidden">-</p>
                     </div>
                     <div>
-                        <p class="text-center md:text-justify uppercase lato text-sm">purestartllc@gmail.com</p>
+                        <a href="mailto:purestartllc@gmail.com">
+                            <p class="text-center md:text-justify uppercase lato text-sm cursor-pointer">purestartllc@gmail.com</p>
+                        </a>
                     </div>
                 </div>
                 <div class="text-center mt-5 md:mt-0">
@@ -113,32 +118,28 @@
     </footer>
     
     <script src="{{ mix('js/purestartllc.js') }}"></script>
-    {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
-    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
 
     <script>
+        var showNavbar = false;
         var swiper = new Swiper(".mySwiper", {
             autoplay: {
                 delay: 3000,
             }
         });
-        // window.onload = function () {
-        //     scrollSpy('#main-menu', {
-        //         sectionClass: '.scrollspy',
-        //         menuActiveTarget: '.menu-item',
-        //         offset: 100,
-        //         scrollContainer: '.scroll-container',
-        //         // smooth scroll
-        //         smoothScroll: true,
-        //         smoothScrollBehavior: function(element) {
-        //         console.log('run "smoothScrollBehavior"...', element)
-        //         element.scrollIntoView({ behavior: 'smooth' })
-        //         }
-        //     })
-        // }
-        // AOS.init({
-        //     once:true
-        // });
+        
+        function openNavbar() {
+            const navbar    =   document.getElementById('xnavbar');
+            if(!showNavbar)
+            {
+                document.getElementById('xnavbar').style.display = 'block';
+                showNavbar = true;
+            }
+            else
+            {
+                document.getElementById('xnavbar').style.display = 'none';
+                showNavbar = false;
+            }
+        }
     </script>
 
     @livewireScripts

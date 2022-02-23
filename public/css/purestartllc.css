@@ -666,17 +666,31 @@ header {
     border-bottom: 1px solid #326a58;
 }
 
+.main-phone {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+header {
+    width:100%;
+    display: block;
+}
+
+header img {
+    width:280px;
+}
+
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: none;
 }
-
-header ul li {
-    float: right;
-}
-
 header ul li a {
     display: block;
     color: #666;
@@ -692,4 +706,24 @@ header ul li a:hover:not(.active) {
 header ul li a.active {
     color: white;
     background-color: #326a58;
+}
+
+@media screen and (min-width:768px ) {
+    header ul {
+        position: absolute;
+        right:0;
+        top:-1px;
+        display: block;
+    }
+    header ul li {
+        float: left;
+    }
+    header ul .xnavbar {
+        display: block;
+    } 
+}
+@media screen and (max-width:320px) {
+    header img {
+        width:240px;
+    }
 }

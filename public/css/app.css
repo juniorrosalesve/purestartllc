@@ -1287,6 +1287,17 @@ html {
 .menu>:where(li:focus)>:where(ul) {
   display: flex;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding,.5rem);
+  min-height: 4rem;
+  width: 100%;
+}
+.navbar>* {
+  display: flex;
+  align-items: center;
+}
 .range {
   height: 1.25rem;
   width: 100%;
@@ -2299,6 +2310,9 @@ html {
 .top-0 {
   top: 0px;
 }
+.-right-60 {
+  right: -15rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -2715,6 +2729,9 @@ html {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-r {
+  border-right-width: 1px;
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2733,6 +2750,10 @@ html {
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -2990,6 +3011,9 @@ html {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .text-gray-500 {
   --tw-text-opacity: 1;

@@ -147,7 +147,7 @@
                   TOUCH!</p>
             </div>
                <p class="text-center lato">
-                  HAVE A SPECIAL REQUEST? CONTACT US VIA EMAIL AT <span class="text-primary cursor-pointer">INFO@PURESTARTLLC.COM</span>
+                  HAVE A SPECIAL REQUEST? CONTACT US VIA EMAIL AT <a href="mailto:info@purestartllc.com"><span class="text-primary cursor-pointer">INFO@PURESTARTLLC.COM</span></a>
 FOR A FREE CONSULTATION
                </p>
             </div>

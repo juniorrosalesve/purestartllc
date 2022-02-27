@@ -708,6 +708,119 @@ header ul li a.active {
     background-color: #326a58;
 }
 
+.jcontainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.jcontainer .jrow {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.jcontainer .jrow img {
+    float: left;
+}
+.jcontainer .jrow ul {
+    float: right;
+    margin-top: 10px;
+}
+
+
+.jcontainerb {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.jcontainerb .jrow:nth-last-child(4) {
+    margin-left: 0;
+}
+.jcontainerb .jrow {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-left: 30px;
+}
+.jcontainerb .jrow {
+    width: 250px;
+    min-width: 250px;
+}
+.jcontainerb .jrow ul {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:1118px ) {
+    .jcontainerb {
+        display: inline-block;
+        flex-direction:unset;
+        justify-content: unset;
+    }
+    .jcontainerb .jrow {
+        height: 350px;
+        min-height: 350px;
+    }
+    .jcontainerb .jrow:last-child {
+        float: left;
+    }
+    .jcontainerb .jrow:nth-last-child(2) {
+        float: right;
+    }
+    .jcontainerb .jrow:nth-last-child(3) {
+        float: left;
+        margin-bottom: 10px;
+    }
+    .jcontainerb .jrow:nth-last-child(4) {
+        margin-bottom: 10px;
+        float: right;
+    }
+}
+@media screen and (max-width:687px ) {
+    .jcontainerb {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .jcontainerb .jrow {
+        margin-top: 10px;
+    }
+    .jcontainerb .jrow:last-child {
+        float: none;
+    }
+    .jcontainerb .jrow:nth-last-child(2) {
+        float: none;
+    }
+    .jcontainerb .jrow:nth-last-child(3) {
+        float: none;
+    }
+    .jcontainerb .jrow:nth-last-child(4) {
+        float: none;
+    }
+}
+@media screen and (max-width:1310px ) {
+    .jcontainer .jrow ul {
+        margin-top: -15px;
+        float: left;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:768px ) {
+    .jcontainer {
+        flex-direction: column;
+    }
+    .jcontainer .jrow {
+        margin-top: 10px;
+    }
+    .jcontainer .jrow img {
+        float: none;
+    }
+    .jcontainer .jrow ul {
+        float: none;
+    }
+}
+
 @media screen and (min-width:768px ) {
     header ul {
         position: absolute;

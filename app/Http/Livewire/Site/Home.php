@@ -14,6 +14,13 @@ class Home extends Component
     public $phone;
     public $business;
 
+    // public function mount() {
+    //     $this->name     = 'Júnior Rosales';
+    //     $this->email    = 'junior@cliente';
+    //     $this->phone    = '+14245271843';
+    //     $this->business = 'Concepto Digital';
+    // }
+
     public function submit() {
         $data   =   [
             'name' => $this->name,
@@ -22,6 +29,8 @@ class Home extends Component
             'business' => $this->business
         ];
         Mail::to('purestartllc@gmail.com')->queue(new ContactMail($data));
+        // Mail::to('juniorrosales1908@gmail.com')->queue(new ContactMail($data));
+        // dd('testing');
         $this->name = '';
         $this->email = '';
         $this->phone = '';

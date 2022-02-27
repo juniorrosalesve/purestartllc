@@ -1,4 +1,4 @@
-<div>
+<div class="w-full">
    <h1 class="text-center uppercase lato text-2xl mt-10 font-semibold">WE CLEAN</h1>
    <div class="jcontainer">
       <div class="jrow">

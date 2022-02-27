@@ -712,7 +712,19 @@ header ul li a.active {
     padding: 20px;
     display: flex;
     flex-direction: row;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .jcontainer .jrow {
     background-color: #fff;
@@ -733,7 +745,19 @@ header ul li a.active {
     padding: 20px;
     display: flex;
     flex-direction: row;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .jcontainerb .jrow:nth-last-child(4) {
     margin-left: 0;
@@ -780,11 +804,13 @@ header ul li a.active {
 @media screen and (max-width:687px ) {
     .jcontainerb {
         display: flex;
-        flex-direction:column;
-        justify-content: center;
+        flex-direction: column;
     }
     .jcontainerb .jrow {
         margin-top: 10px;
+        margin-left: 0;
+        width: 300px;
+        min-width: 300px;
     }
     .jcontainerb .jrow:last-child {
         float: none;
@@ -805,6 +831,10 @@ header ul li a.active {
         float: left;
         margin-left: 10px;
     }
+    .jcontainer .jrow {
+        height: 390px;
+        min-height: 390px;
+    }
 }
 @media screen and (max-width:768px ) {
     .jcontainer {
@@ -812,12 +842,25 @@ header ul li a.active {
     }
     .jcontainer .jrow {
         margin-top: 10px;
+        width: 300px;
+        min-width: 300px;
     }
     .jcontainer .jrow img {
         float: none;
     }
     .jcontainer .jrow ul {
         float: none;
+    }
+}
+
+@media screen and (max-width:320px ) {
+    .jcontainer .jrow {
+        width: 250px;
+        min-width: 250px;
+    }
+    .jcontainerb .jrow {
+        width: 250px;
+        min-width: 250px;
     }
 }
 

@@ -119,6 +119,9 @@ header ul li a.active {
 }
 .jcontainer .jrow img {
     float: left;
+    width: 100%;      
+    height: calc(100% - 50px); 
+    object-fit: contain;  
 }
 .jcontainer .jrow ul {
     float: right;
@@ -152,10 +155,13 @@ header ul li a.active {
     background-color: #fff;
     border-radius: 6px;
     margin-left: 30px;
-}
-.jcontainerb .jrow {
     width: 250px;
     min-width: 250px;
+}
+.jcontainerb .jrow img {
+    width: 100%;      
+    height: calc(100% - 50px); 
+    object-fit: contain;  
 }
 .jcontainerb .jrow ul {
     margin-top: -10px;

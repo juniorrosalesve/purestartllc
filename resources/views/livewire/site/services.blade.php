@@ -32,7 +32,7 @@
          </ul>
       </div>
    </div> --}}
-   {{-- <div class="p-10 md:p-5 md:flex md:justify-center">
+   <div class="p-10 md:p-5 md:flex md:justify-center">
       <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md">
          <div class="sm:flex sm:justify-center md:flex-none	md:block xl:flex p-5">
             <div style="width:100%;">
@@ -81,11 +81,7 @@
             </div>
          </div>
       </div>
-   </div> --}}
-   <img src="{{ asset('img/servicios/oficinas-min.png') }}" alt="notas" class="w-40" />
-   <img src="{{ asset('img/servicios/IMG-3065-min.png') }}" alt="notas" class="w-40" />
-   <img src="{{ asset('img/servicios/IMG-3064-min.png') }}" alt="notas" class="w-40" />
-   
+   </div>
 
    <div class="w-full bg-white p-7">
       <div class="swiper mySwiper md:max-h-96">
@@ -156,7 +152,7 @@
       </div>
    </div> --}}
 
-   {{-- <div class="p-10 md:grid md:grid-cols-2 xl:grid-cols-none xl:flex xl:justify-center">
+   <div class="p-10 md:grid md:grid-cols-2 xl:grid-cols-none xl:flex xl:justify-center">
       <div class="w-full sm:flex sm:justify-between md:flex md:block md:w-72 bg-white rounded-lg border border-gray-200 shadow-md">
          <div class="p-5">
             <div >
@@ -217,7 +213,7 @@
             </div>
          </div>
       </div>
-   </div> --}}
+   </div>
 
    <div class="p-10 -mt-10 flex justify-center">
       <div class="w-full md:w-fit bg-white rounded-lg border border-gray-200 shadow-md">

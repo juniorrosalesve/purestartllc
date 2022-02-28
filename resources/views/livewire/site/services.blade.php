@@ -110,9 +110,9 @@
 
    <h1 class="text-center uppercase lato text-2xl mt-10 font-semibold">OUR SERVICES</h1>
 
-   <img src="{{ asset('img/servicios/IMG-3063-min.png') }}" alt="notas" class="w-40" />
+   {{-- <img src="{{ asset('img/servicios/IMG-3063-min.png') }}" alt="notas" class="w-40" />
    <img src="{{ asset('img/servicios/IMG-3062-min.png') }}" alt="notas" class="w-40" />
-   <img src="{{ asset('img/servicios/IMG-3061-min.png') }}" alt="notas" class="w-40" />
+   <img src="{{ asset('img/servicios/IMG-3061-min.png') }}" alt="notas" class="w-40" /> --}}
 
    {{-- <div class="jcontainerb">
       <div class="jrow">

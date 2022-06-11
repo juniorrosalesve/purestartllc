@@ -74,15 +74,17 @@
             <div class="md:basis-8/12 p-10">
                 <div class="md:flex md:justify-center md:gap-5">
                     <div>
-                        <a href="tel:+18136070944">
-                            <p class="text-center lato font-semibold">813.607.0944</p>
-                        </a>
-                    </div>
-                    <div class="md:-mt-5">
                         <center>
                             <img src="{{ asset('img/icono-min.png') }}" alt="icono-purestartllc" class="w-10">
                         </center>
                     </div>
+                </div>
+                <div class="md:flex md:justify-center md:gap-5">
+                    <!-- <div>
+                        <a href="tel:+18136070944">
+                            <p class="text-center lato font-semibold">813.607.0944</p>
+                        </a>
+                    </div> -->
                     <div>
                         <a href="tel:+14049881420">
                             <p class="text-center lato font-semibold">404.988.1420</p>
@@ -106,9 +108,9 @@
                     </div>
                 </div>
                 <div class="text-center mt-5 md:mt-0">
-                    <p class="uppercase lato">
+                    <!-- <p class="uppercase lato">
                         “Nice and Neat, Fresh and Clean”
-                    </p>
+                    </p> -->
                     <p class="lato italic text-xs">
                         Copyright &copy; PureStart LLC - Commercial Cleaning - All Rights Reserved. <br /> Do Not Sell My Personal Information.
                     </p>   

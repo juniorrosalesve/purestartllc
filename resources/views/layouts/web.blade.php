@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/purestartllc.css') }}">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
-
+    @livewireScripts
 </head>
 <body>
     <header class="bg-white">
@@ -143,8 +143,5 @@
             }
         }
     </script>
-
-    @livewireScripts
-
 </body>
 </html>

@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <form method="POST" action="https://panel.purestartllc.com/GoForm">
+            <form wire:submit.prevent="submit">
                 <div class="p-10 bg-secondary-focus">
                     <p class="text-md text-center lato uppercase mb-2">Drop us a line and we’ll get back with you soon.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -119,31 +119,42 @@
                             <label class="label">
                                 <span class="label-text lato uppercase">Full name</span>
                             </label> 
-                            <input type="text" name="nombre" class="rounded-sm text-xs p-2">
+                            <input type="text" wire:model="nombre" name="nombre" class="rounded-sm text-xs p-2">
+                            @error('nombre') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
                         </div> 
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text lato uppercase">Email address</span>
                             </label> 
-                            <input type="text" name="email" class="rounded-sm text-xs p-2">
+                            <input type="text" wire:model="email" name="email" class="rounded-sm text-xs p-2">
+                            @error('email') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
                         </div>
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text lato uppercase">Phone number</span>
                             </label> 
-                            <input type="text" name="telefono" class="rounded-sm text-xs p-2">
+                            <input type="text" wire:model="telefono" name="telefono" class="rounded-sm text-xs p-2">
+                            @error('telefono') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
                         </div>
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text lato uppercase">Business name</span>
                             </label> 
-                            <input type="text" name="empresa" class="rounded-sm text-xs p-2">
+                            <input type="text" wire:model="empresa" name="empresa" class="rounded-sm text-xs p-2">
+                            @error('empresa') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
                         </div>
                     </div>
                     <div>
                         <center>
-                            <button type="submit" class="btn btn-success btn-sm w-56 md:w-60 lato border-0 rounded-sm mt-8">Submit</button>
-                        </center>
+                            @if (session()->has('success'))
+                                <div>
+                                    <div class="alert alert-success mt-3">
+                                        {{ session('success') }}
+                                    </div>
+                                </div>
+                            @else
+                                <button type="submit" class="btn btn-success btn-sm w-56 md:w-60 lato border-0 rounded-sm mt-8" wire:loading.attr="disabled">Submit</button>
+                            @endif
                     </div>
                 </div>
             </form>

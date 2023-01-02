@@ -4,7 +4,7 @@
 @component('mail::table')
 | Name | Email | Phone | Business |
 | ---- |:-----:| -----:| --------:|
-| {{ $data['name'] }}      | {{ $data['email'] }}      | {{ $data['phone'] }}      | {{ $data['business'] }}      |
+| {{ $data['nombre'] }}      | {{ $data['email'] }}      | {{ $data['telefono'] }}      | {{ $data['empresa'] }}      |
 @endcomponent
 
 @endcomponent
